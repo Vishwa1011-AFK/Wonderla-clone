@@ -1,10 +1,14 @@
+// wonderla-clone/src/components/RidesSection.tsx
 "use client";
 
 import React, { useState, useRef } from 'react';
-import ridesData from '@/data/ridesData.json';
+import ridesData from '@/data/ridesData.json'; // Make sure this path is correct
 import RideCard from './RideCard';
 import CategorySidebar from './CategorySidebar';
 import CarouselControls from './CarouselControls';
+
+// Define a limit for rides per category in the carousel
+const RIDE_LIMIT_PER_CATEGORY = 12; // Or your preferred number (e.g., 10, 15)
 
 const RidesSection = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('Land');
@@ -17,7 +21,10 @@ const RidesSection = () => {
     }
   };
 
-  const filteredRides = ridesData.filter(ride => ride.category === selectedCategory);
+  // Filter rides AND then slice to limit the number
+  const displayedRides = ridesData
+    .filter(ride => ride.category === selectedCategory)
+    .slice(0, RIDE_LIMIT_PER_CATEGORY); // Apply the limit
 
   const handleScroll = (direction: 'prev' | 'next') => {
     if (scrollContainerRef.current) {
@@ -53,7 +60,8 @@ const RidesSection = () => {
 
         <div className="flex-1 w-full md:w-auto">
           <div className="flex flex-col items-center gap-4 mb-6 sm:flex-row sm:justify-between">
-            <h1 className="font-mulish text-[40px] font-black uppercase !leading-[1] tracking-[-0.04em] sm:text-[44px] md:text-[50px] lg:text-[56px] xl:text-6xl text-white text-left">
+            {/* Ensure your title is using font-sans or explicitly font-mulish if Mulish is not default sans */}
+            <h1 className="font-sans font-black uppercase text-white text-center sm:text-left text-4xl md:text-5xl lg:text-[56px] leading-none tracking-tight">
                 Our Iconic Rides
             </h1>
             <CarouselControls onPrev={() => handleScroll('prev')} onNext={() => handleScroll('next')} />
@@ -64,14 +72,19 @@ const RidesSection = () => {
             className="flex space-x-5 p-1 overflow-x-auto h-[400px] snap-x snap-mandatory md:snap-none"
             style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
           >
-            {filteredRides.length > 0 ? (
-              filteredRides.map((ride) => (
+            {/* Use the limited 'displayedRides' array */}
+            {displayedRides.length > 0 ? (
+              displayedRides.map((ride) => (
                 <div key={ride.id} className="snap-center flex-shrink-0">
+                  {/*
+                    If your RideCard only handles video, ensure ride.mediaUrl is a video.
+                    If you've updated RideCard to handle ride.mediaType, this is fine.
+                  */}
                   <RideCard {...ride} />
                 </div>
               ))
             ) : (
-              <p className="w-full text-center">No rides found for {selectedCategory}.</p>
+              <p className="w-full text-center">No rides found for {selectedCategory} (or media type mismatch for carousel).</p>
             )}
           </div>
         </div>
