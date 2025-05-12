@@ -1,3 +1,4 @@
+// tailwind.config.ts
 import type { Config } from "tailwindcss";
 
 const config: Config = {
@@ -10,8 +11,12 @@ const config: Config = {
     extend: {
       colors: {
         'wonderla-bg': '#22304A',
+        'wonderla-icon-blue': '#334DCF',
+      },
+      fontFamily: {
+        sans: ['var(--font-mulish)', 'ui-sans-serif', 'system-ui'],
 
-      }
+      },
     },
   },
   plugins: [

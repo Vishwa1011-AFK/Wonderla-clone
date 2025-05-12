@@ -38,7 +38,7 @@ const RideCard: React.FC<RideCardProps> = ({
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
 
       <div className="absolute bottom-0 left-0 right-0 flex flex-col p-3 pb-2.5 text-white"> 
-        <h3 className="text-lg font-bold capitalize leading-tight">
+        <h3 className="font-mulish font-bold capitalize leading-tight">
           {title}
         </h3>
         <p className="text-xs font-normal leading-tight mt-px opacity-80">
