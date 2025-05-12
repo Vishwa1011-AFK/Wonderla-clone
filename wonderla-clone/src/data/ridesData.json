@@ -22,5 +22,55 @@
     "location": "Kochi",
     "description": "An exhilarating flight simulation with banks, loops and dives.",
     "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Air_Race_480p_5d9fb9b2f6.mp4"
+  }, 
+
+  {
+    "id": 4, 
+    "category": "Water",
+    "title": "Water Pendulum",
+    "location": "Kochi",
+    "description": "Hold on tight as you glide up and down on a water tube across a U-shaped slide!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Water_Pendulam_480p_53805faa9e.mp4"
+  },
+  {
+    "id": 5,
+    "category": "Water",
+    "title": "Korneto",
+    "location": "Kochi",
+    "description": "Slide, swirl and splash through a whirling vortex on this slippery ride!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Korneto_480p_76298a8b68.mp4"
+  },
+  {
+    "id": 6,
+    "category": "Water",
+    "title": "Water Falls",
+    "location": "Kochi",
+    "description": "Get drenched under a cascading waterfall with steep rocks.",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Waterfall_480p_986c910678.mp4"
+  },
+
+  {
+    "id": 7,
+    "category": "Kids",
+    "title": "Happy Kangaroo",
+    "location": "Kochi",
+    "description": "Plummet into a safe freefall with a tall & cheerful kangaroo!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Happy_Kangaroo_480p_d24bd08f2f.mp4"
+  },
+  {
+    "id": 8,
+    "category": "Kids",
+    "title": "Pony Train",
+    "location": "Kochi",
+    "description": "Hop onto a chariot-pulled pony ride through the world of fantasy!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Pony_Train_480p_6eb01f2b42.mp4"
+  },
+  {
+    "id": 9,
+    "category": "Kids",
+    "title": "Mini Pirate Ship",
+    "location": "Kochi",
+    "description": "Sail like a pirate on a miniature, adrenaline-filled flying boat!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Pirate_Ship_480p_b86cf5715a.mp4"
   }
 ]
