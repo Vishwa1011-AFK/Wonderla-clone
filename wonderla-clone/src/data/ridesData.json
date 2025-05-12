@@ -22,10 +22,9 @@
     "location": "Kochi",
     "description": "An exhilarating flight simulation with banks, loops and dives.",
     "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Air_Race_480p_5d9fb9b2f6.mp4"
-  }, 
-
+  },
   {
-    "id": 4, 
+    "id": 4,
     "category": "Water",
     "title": "Water Pendulum",
     "location": "Kochi",
@@ -48,7 +47,6 @@
     "description": "Get drenched under a cascading waterfall with steep rocks.",
     "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Waterfall_480p_986c910678.mp4"
   },
-
   {
     "id": 7,
     "category": "Kids",
@@ -72,5 +70,761 @@
     "location": "Kochi",
     "description": "Sail like a pirate on a miniature, adrenaline-filled flying boat!",
     "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Pirate_Ship_480p_b86cf5715a.mp4"
+  },
+  {
+    "id": 10,
+    "category": "Water",
+    "title": "Korneto",
+    "location": "Kochi",
+    "description": "Slide, swirl and splash through a whirling vortex on this slippery ride!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Korneto_Hero_da0ce77525.avif",
+    "tags": ["Funnel spin", "Dark tunnel"]
+  },
+  {
+    "id": 11,
+    "category": "Water",
+    "title": "Twisters",
+    "location": "Kochi",
+    "description": "Zoom down through a twisty maze of tunnels into a splashy escape!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Twisters_Hero_c03a7e9ff0.avif",
+    "tags": ["Water Tunnel", "Twists and Turns"]
+  },
+  {
+    "id": 12,
+    "category": "Water",
+    "title": "Water Pendulum",
+    "location": "Kochi",
+    "description": "Hold on tight as you glide up and down on a water tube across a U-shaped slide!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Water_Pendulum_Hero_51d8d489e6.jpg",
+    "tags": ["U-Shaped Slide", "Gravity Thrill"]
+  },
+  {
+    "id": 13,
+    "category": "Water",
+    "title": "Fusion Slide",
+    "location": "Kochi",
+    "description": "Glide through a snaky water wormhole, wrapped in a kaleidoscopic light show!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Fusion_Slide_Hero_1aa292df6a.avif",
+    "tags": ["Light Effects", "Swinging Thrills"]
+  },
+  {
+    "id": 14,
+    "category": "Water",
+    "title": "Wave Pool",
+    "location": "Kochi",
+    "description": "Experience the bliss of waves washing over you, far away from the sea.",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Wave_1_2_Hero_6ba95ae501.jpg",
+    "tags": ["Beach Vibes", "All Ages"]
+  },
+  {
+    "id": 15,
+    "category": "Water",
+    "title": "Mammoth",
+    "location": "Kochi",
+    "description": "Whiz through liquid loops with your crew before splashing into a smooth landing!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Family_Slide_Hero_fa2a74e78f.jpg",
+    "tags": ["Group Raft", "Kid-Friendly"]
+  },
+  {
+    "id": 16,
+    "category": "Water",
+    "title": "Rapid River",
+    "location": "Kochi",
+    "description": "Navigate your way through 10 interconnected pools & a five-headed hydra!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Rapid_River_Hero_afdb38798b.jpg",
+    "tags": ["Interconnected pools", "Hydra sprays"]
+  },
+  {
+    "id": 17,
+    "category": "Water",
+    "title": "Boomerang",
+    "location": "Kochi",
+    "description": "Shoot out of a tube and swoop back like a boomerang on this thrilling slide!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Boomerang_Hero_8d2e3f99ed.avif",
+    "tags": ["Sudden drop", "Pendulum swing"]
+  },
+  {
+    "id": 18,
+    "category": "Water",
+    "title": "Water Coaster",
+    "location": "Kochi",
+    "description": "Speed straight down a slide with no loops to slow you down!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Water_Coaster_Hero_8826c7560c.jpg",
+    "tags": ["High speed", "Straight drop"]
+  },
+  {
+    "id": 19,
+    "category": "Water",
+    "title": "Fun Racers",
+    "location": "Kochi",
+    "description": "Hold your rubber mat tight as you glide through curvy bumps on 8 water slides!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Fun_Glides_Hero_21b28266d3.avif",
+    "tags": ["Wavy bumps", "8 slides"]
+  },
+  {
+    "id": 20,
+    "category": "Water",
+    "title": "Water Falls",
+    "location": "Kochi",
+    "description": "Get drenched under a cascading waterfall with steep rocks.",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Waterfall_Hero_ccaf7b12c6.jpg",
+    "tags": ["Steep rocks", "Family fun"]
+  },
+  {
+    "id": 21,
+    "category": "Water",
+    "title": "Rain Disco",
+    "location": "Kochi",
+    "description": "Show off your moves under a rainy, kaleidoscopic light show!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Rain_Disco_Hero_37d9ac274c.avif",
+    "tags": ["Indoor dance", "Laser lights"]
+  },
+  {
+    "id": 22,
+    "category": "Water",
+    "title": "Jungle Lagoon",
+    "location": "Kochi",
+    "description": "Dive, swim and enjoy non-stop fun in this triple pool paradise with sprinklers!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Play_Pool_3_Hero_fc42f22a8e.jpg",
+    "tags": ["Water sprayers", "Family pool"]
+  },
+   {
+    "id": 23,
+    "category": "Water",
+    "title": "Drop Loop",
+    "location": "Bengaluru",
+    "description": "Slide down a sky-high slope, twist through a loop and make a splashy exit!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Drop_Loop_Hero_365062be20.avif",
+    "tags": ["High speed", "Vertical slide"]
+  },
+  {
+    "id": 24,
+    "category": "Water",
+    "title": "Jungle Lagoon",
+    "location": "Bengaluru",
+    "description": "Race down water slides, climb a treehouse and wade through a shallow lagoon!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Jungle_Lagoon_Hero_0187971490.jpg",
+    "tags": ["Treehouse fun", "Shallow slides"]
+  },
+   {
+    "id": 25,
+    "category": "Water",
+    "title": "Lazy River",
+    "location": "Bengaluru",
+    "description": "Drift through a calm river that snakes through an alligator and gargoyle skull.",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Lazy_River_Hero_f7407226df.jpg",
+    "tags": ["Relaxing drift", "Rubber floats"]
+  },
+  {
+    "id": 26,
+    "category": "Water",
+    "title": "Boomerang",
+    "location": "Bengaluru",
+    "description": "Shoot out of a tube and swoop back like a boomerang on this thrilling slide!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Boomrang_Hero_2d055a30e8.jpg",
+    "tags": ["Closed tunnel", "Sudden drop"]
+  },
+   {
+    "id": 27,
+    "category": "Water",
+    "title": "Harakiri",
+    "location": "Bengaluru",
+    "description": "Rush down, take a breather, and slide back down to the finish for pure, non-stop thrill!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Harakiri_Hero_38781fdfdb.jpg",
+    "tags": ["Dual drop", "Speed thrills"]
+  },
+    {
+    "id": 28,
+    "category": "Water",
+    "title": "Fun Racers",
+    "location": "Bengaluru",
+    "description": "Slither down through thrilling tiers on this smooth and slippery adventure!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Fun_Racer_Hero_857178845d.avif",
+    "tags": ["Rubber mats", "Gentle thrills"]
+  },
+  {
+    "id": 29,
+    "category": "Water",
+    "title": "Uphill Racers",
+    "location": "Bengaluru",
+    "description": "Hold your rubber mat tight as you race through curvy bumps on this water slide!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Uphill_Racer_Hero_252b193405.avif",
+    "tags": ["Racing thrills", "Family fun"]
+  },
+    {
+    "id": 30,
+    "category": "Land",
+    "title": "Mission Interstellar",
+    "location": "Bengaluru",
+    "description": "Blast through cosmic chaos on a wild, out-of-this-world space ride!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Untitled_2_7b3bdae67c.jpg",
+    "tags": ["4K clarity", "Space theme"]
+  },
+  {
+    "id": 31,
+    "category": "Land",
+    "title": "Net Walk",
+    "location": "Kochi",
+    "description": "Navigate through an adventurous, elevated maze of nylon ropes!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Net_Walk_Hero_46ed3ea072.avif",
+    "tags": ["Rope maze", "Balance challenge"]
+  },
+  {
+    "id": 32,
+    "category": "Land",
+    "title": "VR Coaster",
+    "location": "Kochi",
+    "description": "Strap into a heart-pounding, immersive VR-enhanced rollercoaster experience!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/VR_Coaster_Hero_9a811fcb33.jpg",
+    "tags": ["Immersive ride", "Virtual reality"]
+  },
+  {
+    "id": 33,
+    "category": "Land",
+    "title": "Wonder Splash",
+    "location": "Kochi",
+    "description": "Race up a steep incline and hurtle down into a big splash!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Wonder_Splash_Hero_6713be79f6.jpg",
+    "tags": ["Water bogie", "Steep drop"]
+  },
+  {
+    "id": 34,
+    "category": "Land",
+    "title": "Mystic Saucer",
+    "location": "Kochi",
+    "description": "Spin around in a thrilling pot placed on a rotating turntable floor!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Mystic_Saucer_Hero_c2765bd7e9.jpg",
+    "tags": ["Family fun", "Rotational thrill"]
+  },
+  {
+    "id": 35,
+    "category": "Land",
+    "title": "Sky Ring",
+    "location": "Kochi",
+    "description": "Shoot up a sky-high tower for a birds-eye view of Wonderla Kochi!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Sky_Ring_Hero_ea338e69e8.jpg",
+    "tags": ["Towering ride", "Scenic views"]
+  },
+  {
+    "id": 36,
+    "category": "Land",
+    "title": "Fire Brigade",
+    "location": "Kochi",
+    "description": "Hop on board, take aim and douse the fire with water guns in this whirlwind ride!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Fire_Brigade_Hero_6b67f50c4f.avif",
+    "tags": ["Water cannons", "Fire trucks"]
+  },
+  {
+    "id": 37,
+    "category": "Land",
+    "title": "Sky Wheel",
+    "location": "Kochi",
+    "description": "Firmly straddled atop a 443 meters tall building, the Sky Wheel at Wonderla Amusement Park, Hyderabad",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Sky_Wheel_Hero_3dcca38cf6.avif",
+    "tags": ["Giant Ferris", "Bird’s eye view"]
+  },
+  {
+    "id": 38,
+    "category": "Land",
+    "title": "Crazy Cars",
+    "location": "Kochi",
+    "description": "Dash and crash into your friends’ cars in your very own Formula 1 circuit!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Dashing_Cars_Hero_db1f9694ca.avif",
+    "tags": ["Bumper fun", "Driving thrill"]
+  },
+  {
+    "id": 39,
+    "category": "Land",
+    "title": "Dancing Cars",
+    "location": "Kochi",
+    "description": "Glide along the floor on cars that dance to your favourite beats!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Dancing_Cars_Hero_d6531d1442.avif",
+    "tags": ["Grooving vehicles", "Music sync"]
+  },
+  {
+    "id": 40,
+    "category": "Land",
+    "title": "Rocki'n Tug",
+    "location": "Kochi",
+    "description": "Set sail on a rocky sea adventure, from the safety of land!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Rockin_Tug_Hero_3c98e5166e.avif",
+    "tags": ["Swaying boat", "Family adventure"]
+  },
+  {
+    "id": 41,
+    "category": "Land",
+    "title": "Termite Coaster",
+    "location": "Kochi",
+    "description": "Ride on the edge with sharp curves, steep climbs and dizzying drops!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Caterpillar_Coaster_Hero_54971e7089.jpg",
+    "tags": ["Train ride", "Steep drops"]
+  },
+  {
+    "id": 42,
+    "category": "Land",
+    "title": "Adventures of Chikku",
+    "location": "Kochi",
+    "description": "Buckle up for a hyper-realistic 3D adventure with gusts of wind and water splashes!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Adventure_of_Chikku_Hero_c20e7f0959.avif",
+    "tags": ["3D effects", "Movie magic"]
+  },
+  {
+    "id": 43,
+    "category": "Land",
+    "title": "Jumping Frog",
+    "location": "Kochi",
+    "description": "Hop on a frog and leap into ribbiting fun as you spin around!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Jumping_Frog_Hero_9b2260975f.avif",
+    "tags": ["Bouncy ride", "Frog theme"]
+  },
+  {
+    "id": 44,
+    "category": "Land",
+    "title": "Cinemagic Ride",
+    "location": "Kochi",
+    "description": "Step into a VR journey where seats move, sounds roar and visuals leap out at you!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Cinemagic_Ride_Hero_674ba1cf4d.avif",
+    "tags": ["3D adventure", "Family ride"]
+  },
+  {
+    "id": 45,
+    "category": "Land",
+    "title": "Crazy Wagon",
+    "location": "Kochi",
+    "description": "Get whisked away in an oscillating wagon attached to a sky-high windmill blade!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Windmill_Hero_c4fba17275.jpg",
+    "tags": ["Horse wagon", "Oscillating ride"]
+  },
+  {
+    "id": 46,
+    "category": "Land",
+    "title": "Pirate Ship",
+    "location": "Kochi",
+    "description": "Soar high & hurtle to and fro on a thrilling boat that sails on thin air!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Flying_Boat_Hero_750ae56ac4.avif",
+    "tags": ["Rowing fun", "Gentle swing"]
+  },
+  {
+    "id": 47,
+    "category": "Land",
+    "title": "Air Race",
+    "location": "Kochi",
+    "description": "An exhilarating flight simulation with banks, loops and dives.",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Air_Race_Hero_d5766d8ff6.jpg",
+    "tags": ["Aerobatic thrills", "Flight simulation"]
+  },
+    {
+    "id": 48,
+    "category": "Land",
+    "title": "Recoil",
+    "location": "Kochi",
+    "description": "India’s first-ever action-packed reverse looping roller coaster ride!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Recoil_Hero_ba2d574970.avif",
+    "tags": ["Reverse rollercoaster", "Looped thrills"]
+  },
+  {
+    "id": 49,
+    "category": "Land",
+    "title": "Equinox 360",
+    "location": "Kochi",
+    "description": "A thrill monster that flips you around 360 degrees in a gravity-defying spin.",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Equinox_360_Hero_28298420ec.jpg",
+    "tags": ["Axial rotation", "360° view"]
+  },
+   {
+    "id": 50,
+    "category": "Land",
+    "title": "Mission Interstellar",
+    "location": "Bengaluru",
+    "description": "Blast through cosmic chaos on a wild, out-of-this-world space ride!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Untitled_2_7b3bdae67c.jpg",
+    "tags": ["4K clarity", "Space theme"]
+  },
+ {
+    "id": 51,
+    "category": "Land",
+    "title": "Net Walk",
+    "location": "Bengaluru",
+    "description": "Maintain your balance through an adventurous, elevated maze of nylon ropes!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Net_walking_Hero_1a3773bdb9.jpg",
+    "tags": ["Balance challenge", "Elevated walkway"]
+  },
+   {
+    "id": 52,
+    "category": "Land",
+    "title": "Wonder Splash",
+    "location": "Bengaluru",
+    "description": "Race up a steep incline and hurtle down into a big splash!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Wonder_Splash_Hero_6c87e8a3d0.jpg",
+    "tags": ["Steep drop", "Splash fun"]
+  },
+  {
+    "id": 53,
+    "category": "Land",
+    "title": "Cinemagic Ride",
+    "location": "Bengaluru",
+    "description": "Step into a VR journey where seats move, sounds roar, and visuals leap out at you!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Cine_Magic_Hero_09d0cfadbd.jpg",
+    "tags": ["3D cinema", "Synchronized motion"]
+  },
+  {
+    "id": 54,
+    "category": "Land",
+    "title": "Sky Wheel",
+    "location": "Hyderabad",
+    "description": "Firmly straddled atop a 443 meters tall building, the Sky Wheel at Wonderla Amusement Park, Hyderabad",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Sky_Wheel_Hero_0d799cb640.jpg",
+    "tags": ["Bird’s eye view", "Ferris thrill"]
+  },
+  {
+    "id": 55,
+    "category": "Land",
+    "title": "Crazy Cars",
+    "location": "Hyderabad",
+    "description": "Dash and crash into your friends’ cars in your very own Formula 1 circuit!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Crazy_Cars_Hero_b73a799bad.avif",
+    "tags": ["Bumper fun", "Family ride"]
+  },
+  {
+    "id": 56,
+    "category": "Land",
+    "title": "Pirate Ship",
+    "location": "Hyderabad",
+    "description": "Sail the skies and sway wild like Jack Sparrow on this thrilling ship!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Pirate_Ship_Hero_f916640f04.jpg",
+    "tags": ["Swinging fun", "Adrenaline burst"]
+  },
+   {
+    "id": 57,
+    "category": "Land",
+    "title": "Magic Mushroom",
+    "location": "Bengaluru",
+    "description": "Spin around a magic mushroom on the backs of mighty ants and busy bees!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Magic_Mashroom_Hero_474233d857.jpg",
+    "tags": ["Garden theme", "Carousel fun"]
+  },
+   {
+    "id": 58,
+    "category": "Land",
+    "title": "Mini Venice",
+    "location": "Bengaluru",
+    "description": "Step into a portal to Venice on this gondola-inspired ride!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Mini_Venice_Hero_cddd89f313.jpg",
+    "tags": ["Gondola ride", "Venice theme"]
+  },
+   {
+    "id": 59,
+    "category": "Land",
+    "title": "Mini Pirate Ship",
+    "location": "Bengaluru",
+    "description": "Sail like a pirate on a miniature, adrenaline-filled flying boat!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Mini_Pirate_Ship_Hero_6656a08fcd.jpg",
+    "tags": ["Gentle swings", "Safe thrills"]
+  },
+  {
+    "id": 60,
+    "category": "Land",
+    "title": "Merry Ghost",
+    "location": "Bengaluru",
+    "description": "Whirl around on a colorful merry-go-round with friendly ghosts!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Merry_Ghost_Hero_f95ec64b65.jpg",
+    "tags": ["Colourful ride", "Merry-go-round"]
+  },
+  {
+    "id": 61,
+    "category": "Land",
+    "title": "Kiddies Wheel",
+    "location": "Bengaluru",
+    "description": "A miniature giant wheel designed to give your children a taste of real thrill without being half as scary.",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Kiddies_Wheel_Hero_1804a5cbaa.jpg",
+    "tags": ["Mini Ferris", "Gentle thrill"]
+  },
+   {
+    "id": 62,
+    "category": "Land",
+    "title": "Mini Express",
+    "location": "Bengaluru",
+    "description": "Climb onboard a mini toy train journey around an exciting circuit!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Mini_Express_Hero_097838f358.avif",
+    "tags": ["Toy train", "Circuit fun"]
+  },
+  {
+    "id": 63,
+    "category": "Land",
+    "title": "Jumping Frog",
+    "location": "Bengaluru",
+    "description": "Hop on a frog and leap into ribbiting fun as you spin around!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Jumping_Frog_Hero_324a710a2d.jpg",
+    "tags": ["Gentle leaps", "Merry-go-round"]
+  },
+   {
+    "id": 64,
+    "category": "Land",
+    "title": "Flying Jumbo",
+    "location": "Bengaluru",
+    "description": "This is a wavy merry-go-around where participants seated like mahouts on flying elephants spin in a circle while also moving up and down vertically.",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Flying_Jumbo_Hero_34da57c05b.jpg",
+    "tags": ["Flying elephants", "Circular ride"]
+  },
+  {
+    "id": 65,
+    "category": "Land",
+    "title": "Funky Monkey",
+    "location": "Bengaluru",
+    "description": "Plummet into a safe freefall with a tall & playful monkey!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Funky_Monkey_Hero_81d9503a8c.jpg",
+    "tags": ["Mini drop zone", "5m freefall"]
+  },
+   {
+    "id": 66,
+    "category": "Land",
+    "title": "Carousel",
+    "location": "Bengaluru",
+    "description": "Gallop around on colourful horses like a seasoned cowboy!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Carousel_Hero_10d0be25fb.jpg",
+    "tags": ["Carousel", "Galloping horses"]
+  },
+  {
+    "id": 67,
+    "category": "Land",
+    "title": "Convoy",
+    "location": "Bengaluru",
+    "description": "Pick your favourite ride and go zooming over an exciting hilly terrain!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Convoy_Hero_0755e18acf.jpg",
+    "tags": ["Mini vehicles", "Hilly track"]
+  },
+    {
+    "id": 68,
+    "category": "Land",
+    "title": "Cyclone",
+    "location": "Hyderabad",
+    "description": "Sway up to the sky with accelerating spins on this heart-stopping ride!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Cyclone_Hero_0e88c27b42.avif",
+    "tags": ["Towering spin", "Swirling action"]
+  },
+  {
+    "id": 69,
+    "category": "Land",
+    "title": "Sky Cab",
+    "location": "Hyderabad",
+    "description": "Hop onto a magical sky chariot and tour the Wonderla kingdom!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Sky_Cab_Hero_79609a48f4.avif",
+    "tags": ["Aerial view", "Scenic journey"]
+  },
+  {
+    "id": 70,
+    "category": "Land",
+    "title": "Bumper Cars",
+    "location": "Hyderabad",
+    "description": "Dash and crash into your friends’ cars in your very own Formula 1 circuit!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Dashing_Cars_Hero_d595d6ac8d.avif",
+    "tags": ["Bump and crash", "Mini cars"]
+  },
+  {
+    "id": 71,
+    "category": "Land",
+    "title": "Adventures of Chikku",
+    "location": "Hyderabad",
+    "description": "Buckle up for a hyper-realistic 3D adventure with gusts of wind and water splashes!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Adventure_of_Chikku_Hero_1_9050c06e4c.avif",
+    "tags": ["3D effects", "Adventure journey"]
+  },
+  {
+    "id": 72,
+    "category": "Land",
+    "title": "Techno Jump",
+    "location": "Hyderabad",
+    "description": "Strap into a capsule that shakes you up and spins you around.",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Techno_Jump_Rolan_7ee07de46e.jpeg",
+    "tags": ["Spinning carousel", "Hydraulic motion"]
+  },
+  {
+    "id": 73,
+    "category": "Land",
+    "title": "Maverick",
+    "location": "Hyderabad",
+    "description": "Defy physics on this rebel ride that twists, tilts and swivels by choice.",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Mavrick_Hero_9c2f257937.jpg",
+    "tags": ["Unpredictable ride", "Tilts and twists"]
+  },
+ {
+    "id": 74,
+    "category": "Water",
+    "title": "Korneto",
+    "location": "Bhubaneswar",
+    "description": "Slide, swirl and splash through a whirling vortex on this slippery ride!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Korneto_Hero_da0ce77525.avif",
+    "tags": ["Funnel spin", "Dark tunnel"]
+  },
+  {
+    "id": 75,
+    "category": "Water",
+    "title": "Twisters",
+    "location": "Bhubaneswar",
+    "description": "Zoom down through a twisty maze of tunnels into a splashy escape!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Twisters_Hero_c03a7e9ff0.avif",
+    "tags": ["Water Tunnel", "Twists and Turns"]
+  },
+  {
+    "id": 76,
+    "category": "Water",
+    "title": "Water Pendulum",
+    "location": "Bhubaneswar",
+    "description": "Hold on tight as you glide up and down on a water tube across a U-shaped slide!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Water_Pendulum_Hero_51d8d489e6.jpg",
+    "tags": ["U-Shaped Slide", "Gravity Thrill"]
+  },
+  {
+    "id": 77,
+    "category": "Water",
+    "title": "Fusion Slide",
+    "location": "Bhubaneswar",
+    "description": "Glide through a snaky water wormhole, wrapped in a kaleidoscopic light show!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Fusion_Slide_Hero_1aa292df6a.avif",
+    "tags": ["Light Effects", "Swinging Thrills"]
+  },
+  {
+    "id": 78,
+    "category": "Water",
+    "title": "Wave Pool",
+    "location": "Bhubaneswar",
+    "description": "Experience the bliss of waves washing over you, far away from the sea.",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Wave_1_2_Hero_6ba95ae501.jpg",
+    "tags": ["Beach Vibes", "All Ages"]
+  },
+  {
+    "id": 79,
+    "category": "Water",
+    "title": "Mammoth",
+    "location": "Bhubaneswar",
+    "description": "Whiz through liquid loops with your crew before splashing into a smooth landing!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Family_Slide_Hero_fa2a74e78f.jpg",
+    "tags": ["Group Raft", "Kid-Friendly"]
+  },
+  {
+    "id": 80,
+    "category": "Water",
+    "title": "Rapid River",
+    "location": "Bhubaneswar",
+    "description": "Navigate your way through 10 interconnected pools & a five-headed hydra!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Rapid_River_Hero_afdb38798b.jpg",
+    "tags": ["Interconnected pools", "Hydra sprays"]
+  },
+  {
+    "id": 81,
+    "category": "Water",
+    "title": "Boomerang",
+    "location": "Bhubaneswar",
+    "description": "Shoot out of a tube and swoop back like a boomerang on this thrilling slide!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Boomerang_Hero_8d2e3f99ed.avif",
+    "tags": ["Sudden drop", "Pendulum swing"]
+  },
+  {
+    "id": 82,
+    "category": "Water",
+    "title": "Water Coaster",
+    "location": "Bhubaneswar",
+    "description": "Speed straight down a slide with no loops to slow you down!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Water_Coaster_Hero_8826c7560c.jpg",
+    "tags": ["High speed", "Straight drop"]
+  },
+  {
+    "id": 83,
+    "category": "Water",
+    "title": "Fun Racers",
+    "location": "Bhubaneswar",
+    "description": "Hold your rubber mat tight as you glide through curvy bumps on 8 water slides!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Fun_Glides_Hero_21b28266d3.avif",
+    "tags": ["Wavy bumps", "8 slides"]
+  },
+  {
+    "id": 84,
+    "category": "Water",
+    "title": "Water Falls",
+    "location": "Bhubaneswar",
+    "description": "Get drenched under a cascading waterfall with steep rocks.",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Waterfall_Hero_ccaf7b12c6.jpg",
+    "tags": ["Steep rocks", "Family fun"]
+  },
+  {
+    "id": 85,
+    "category": "Water",
+    "title": "Rain Disco",
+    "location": "Bhubaneswar",
+    "description": "Show off your moves under a rainy, kaleidoscopic light show!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Rain_Disco_Hero_37d9ac274c.avif",
+    "tags": ["Indoor dance", "Laser lights"]
+  },
+  {
+    "id": 86,
+    "category": "Water",
+    "title": "Jungle Lagoon",
+    "location": "Bhubaneswar",
+    "description": "Dive, swim and enjoy non-stop fun in this triple pool paradise with sprinklers!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Play_Pool_3_Hero_fc42f22a8e.jpg",
+    "tags": ["Water sprayers", "Family pool"]
+  },
+    {
+    "id": 87,
+    "category": "Land",
+    "title": "Crazy Wagon",
+    "location": "Bengaluru",
+    "description": "Get whisked away in an oscillating wagon attached to a sky-high windmill blade!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Windmill_Hero_c4fba17275.jpg",
+    "tags": ["Horse wagon", "Oscillating ride"]
+  },
+   {
+    "id": 88,
+    "category": "Land",
+    "title": "Harakiri",
+    "location": "Bengaluru",
+    "description": "Rush down, take a breather, and slide back down to the finish for pure, non-stop thrill!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Harakiri_Hero_38781fdfdb.jpg",
+    "tags": ["Dual drop", "Speed thrills"]
+  },
+   {
+    "id": 89,
+    "category": "Land",
+    "title": "Carousel",
+    "location": "Bengaluru",
+    "description": "Gallop around on colourful horses like a seasoned cowboy!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Carousel_Hero_10d0be25fb.jpg",
+    "tags": ["Carousel", "Galloping horses"]
+  },
+  {
+    "id": 90,
+    "category": "Land",
+    "title": "Convoy",
+    "location": "Bengaluru",
+    "description": "Pick your favourite ride and go zooming over an exciting hilly terrain!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Convoy_Hero_0755e18acf.jpg",
+    "tags": ["Mini vehicles", "Hilly track"]
+  },
+  {
+   "id": 91,
+    "category": "Land",
+    "title": "Jumping Frog",
+    "location": "Bhubaneswar",
+    "description": "Hop on a frog and leap into ribbiting fun as you spin around!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Jumping_Frog_Hero_324a710a2d.jpg",
+    "tags": ["Gentle leaps", "Merry-go-round"]
+  },
+    {
+    "id": 92,
+    "category": "Land",
+    "title": "Flying Jumbo",
+    "location": "Bhubaneswar",
+    "description": "This is a wavy merry-go-around where participants seated like mahouts on flying elephants spin in a circle while also moving up and down vertically.",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Flying_Jumbo_Hero_34da57c05b.jpg",
+    "tags": ["Flying elephants", "Circular ride"]
+  },
+  {
+    "id": 93,
+    "category": "Land",
+    "title": "Funky Monkey",
+    "location": "Bengaluru",
+    "description": "Plummet into a safe freefall with a tall & playful monkey!",
+    "mediaUrl": "https://d22pimhl2qmbj7.cloudfront.net/public/Funky_Monkey_Hero_81d9503a8c.jpg",
+    "tags": ["Mini drop zone", "5m freefall"]
   }
 ]
