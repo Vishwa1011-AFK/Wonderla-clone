@@ -2,13 +2,13 @@
 "use client";
 
 import React, { useState, useRef } from 'react';
-import ridesData from '@/data/ridesData.json'; // Make sure this path is correct
+import ConicArcBackground from './ConicArcBackground';
+import ridesData from '@/data/ridesData.json';
 import RideCard from './RideCard';
 import CategorySidebar from './CategorySidebar';
 import CarouselControls from './CarouselControls';
 
-// Define a limit for rides per category in the carousel
-const RIDE_LIMIT_PER_CATEGORY = 12; // Or your preferred number (e.g., 10, 15)
+const RIDE_LIMIT_PER_CATEGORY = 12;
 
 const RidesSection = () => {
   const [selectedCategory, setSelectedCategory] = useState<string>('Land');
@@ -16,90 +16,81 @@ const RidesSection = () => {
 
   const handleCategorySelect = (categoryName: string) => {
     setSelectedCategory(categoryName);
-    if (scrollContainerRef.current) {
-      scrollContainerRef.current.scrollLeft = 0;
-    }
+    if (scrollContainerRef.current) scrollContainerRef.current.scrollLeft = 0;
   };
 
-  // Filter rides AND then slice to limit the number
-  const displayedRides = ridesData
-    .filter(ride => ride.category === selectedCategory)
-    .slice(0, RIDE_LIMIT_PER_CATEGORY); // Apply the limit
+  const displayedRides = ridesData.filter(ride => ride.category === selectedCategory).slice(0, RIDE_LIMIT_PER_CATEGORY);
 
   const handleScroll = (direction: 'prev' | 'next') => {
     if (scrollContainerRef.current) {
-      const scrollAmount = scrollContainerRef.current.clientWidth * 0.8;
-      scrollContainerRef.current.scrollBy({
-        left: direction === 'prev' ? -scrollAmount : scrollAmount,
-        behavior: 'smooth'
-      });
+      const cardElement = scrollContainerRef.current.children[0] as HTMLElement;
+      if (!cardElement) return;
+      const cardWidth = cardElement.offsetWidth;
+      const gap = 20; // From space-x-5
+      const scrollAmount = (cardWidth + gap) * 1.5; 
+      scrollContainerRef.current.scrollBy({ left: direction === 'prev' ? -scrollAmount : scrollAmount, behavior: 'smooth' });
     }
   };
 
-  const buttonBgColor = 'bg-yellow-300';
-  const buttonTextColor = 'text-wonderla-icon-blue';
   const exploreButtonClasses = `
-    capitalize h-14 w-full max-w-[328px] rounded-full
-    text-base font-extrabold leading-tight
-    flex items-center justify-center
-    ${buttonBgColor} ${buttonTextColor}
-    cursor-pointer
-    transition-transform duration-150 ease-in-out hover:scale-105
-    focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:ring-offset-2 focus:ring-offset-wonderla-bg
+    inline-flex items-center justify-center capitalize h-14 px-10 md:px-14 rounded-full
+    text-base font-extrabold bg-wonderla-btn-yellow text-wonderla-icon-blue
+    cursor-pointer transition-transform duration-150 ease-in-out 
+    hover:scale-105 focus:scale-105 active:scale-100
+    focus:outline-none focus:ring-4 focus:ring-yellow-400/50 focus:ring-offset-2 focus:ring-offset-wonderla-bg
   `;
 
   return (
-    <section className="bg-wonderla-bg text-white pt-16 pb-8 px-4 md:pt-24 md:pb-12 md:px-8 lg:pt-[150px] lg:pb-[52px] lg:px-16">
-      <div className="flex flex-col md:flex-row">
-        <div className="w-full mb-8 md:w-1/4 md:mr-8 md:mb-0">
-          <CategorySidebar
-            selectedCategory={selectedCategory}
-            onSelectCategory={handleCategorySelect}
-          />
-        </div>
+    <section className={`relative bg-wonderla-bg text-white 
+                       pt-16 md:pt-20 lg:pt-[100px] pb-12 md:pb-16 lg:pb-[70px]
+                       overflow-hidden`}>
+      
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8 xl:px-10">
+        <div className="flex flex-col lg:flex-row lg:gap-x-10 xl:gap-x-16">
+          
+          <div className="hidden lg:block w-[320px] xl:w-[360px] relative shrink-0 mb-10 lg:mb-0">
+            <ConicArcBackground />
+            <CategorySidebar
+              selectedCategory={selectedCategory}
+              onSelectCategory={handleCategorySelect}
+            />
+          </div>
 
-        <div className="flex-1 w-full md:w-auto">
-          <div className="flex flex-col items-center gap-4 mb-6 sm:flex-row sm:justify-between">
-            {/* Ensure your title is using font-sans or explicitly font-mulish if Mulish is not default sans */}
-            <h1 className="font-sans font-black uppercase text-white text-center sm:text-left text-4xl md:text-5xl lg:text-[56px] leading-none tracking-tight">
+          <div className="flex-1 min-w-0">
+            <div className="flex flex-col items-center text-center lg:text-left lg:flex-row lg:justify-between lg:items-end mb-8 gap-6 lg:gap-4">
+              <h1 className={`font-mulish text-[40px] sm:text-[44px] md:text-[50px] lg:text-[52px] xl:text-[56px] 
+                             font-black uppercase !leading-tightest tracking-custom-tighter text-white 
+                             max-w-xs sm:max-w-sm md:max-w-md lg:max-w-none`}> {/* <-- CORRECTED WITH BACKTICKS */}
                 Our Iconic Rides
-            </h1>
-            <CarouselControls onPrev={() => handleScroll('prev')} onNext={() => handleScroll('next')} />
-          </div>
-
-          <div
-            ref={scrollContainerRef}
-            className="flex space-x-5 p-1 overflow-x-auto h-[400px] snap-x snap-mandatory md:snap-none"
-            style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
-          >
-            {/* Use the limited 'displayedRides' array */}
-            {displayedRides.length > 0 ? (
-              displayedRides.map((ride) => (
-                <div key={ride.id} className="snap-center flex-shrink-0">
-                  {/*
-                    If your RideCard only handles video, ensure ride.mediaUrl is a video.
-                    If you've updated RideCard to handle ride.mediaType, this is fine.
-                  */}
-                  <RideCard {...ride} />
-                </div>
-              ))
-            ) : (
-              <p className="w-full text-center">No rides found for {selectedCategory} (or media type mismatch for carousel).</p>
-            )}
+              </h1>
+              <div className="shrink-0">
+                  <CarouselControls onPrev={() => handleScroll('prev')} onNext={() => handleScroll('next')} />
+              </div>
+            </div>
+            
+            <div
+              ref={scrollContainerRef}
+              className="flex space-x-5 p-1 overflow-x-auto h-[400px] snap-x snap-mandatory hide-scrollbar md:snap-none "
+            >
+              {displayedRides.length > 0 ? (
+                displayedRides.map((ride) => (
+                  <div key={ride.id} className="snap-center flex-shrink-0"> <RideCard {...ride} /> </div>
+                ))
+              ) : ( <p className="w-full text-center py-10">No rides found for {selectedCategory}.</p> )}
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="text-center mt-16">
-        <div
-          className={exploreButtonClasses}
-          tabIndex={0}
-          onClick={() => console.log('Explore All Clicked!')}
-          role="button"
-        >
-          Explore All Rides!
+        <div className="flex justify-center mt-10 md:mt-14 lg:mt-16">
+          <a href="/rides" className="inline-block max-w-[328px] w-[min(328px,calc(100dvw-32px))]">
+            <div className={exploreButtonClasses} tabIndex={0}> Explore All Rides! </div>
+          </a>
         </div>
       </div>
+      <style jsx global>{`
+        .hide-scrollbar::-webkit-scrollbar { display: none; }
+        .hide-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+      `}</style>
     </section>
   );
 };
