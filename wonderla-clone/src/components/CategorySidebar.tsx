@@ -15,38 +15,35 @@ const categoryItemsData = [
     name: 'Land',
     count: 74,
     IconComponent: LandIcon,
-    itemPositionSpecific: 'top-[80px] left-[12%]',
+    itemPositionSpecific: 'top-[50px] left-[40px]', 
     iconContainerSize: 'w-[62px] h-[62px]',
-    iconSizeClasses: 'w-full h-full',
-    initialIconScale: 'scale-[1.35]',
-    textOffset: 'left-[calc(100%+16px)]'
+    iconSizeClasses: 'w-full h-full', 
+    textOffset: 'left-[calc(100%+20px)] sm:left-[calc(100%+24px)]'
   },
   {
     name: 'Water',
     count: 55,
     IconComponent: WaterIcon,
-    itemPositionSpecific: 'top-[230px] left-[28%]',
-    iconContainerSize: 'w-[58px] h-[58px]',
+    itemPositionSpecific: 'top-[280px] left-[150px]',
+    iconContainerSize: 'w-[75px] h-[70px]',
     iconSizeClasses: 'w-full h-full',
-    initialIconScale: 'scale-100',
-    textOffset: 'left-[calc(100%+16px)]'
+    textOffset: 'left-[calc(100%+20px)] sm:left-[calc(100%+24px)]'
   },
   {
     name: 'Kids',
     count: 36,
     IconComponent: KidsIcon,
-    itemPositionSpecific: 'top-[380px] left-[8%]',
+    itemPositionSpecific: 'top-[480px] left-[12%]', 
     iconContainerSize: 'w-[62px] h-[63px]',
     iconSizeClasses: 'w-full h-full',
-    initialIconScale: 'scale-100',
-    textOffset: 'left-[calc(100%+16px)]'
+    textOffset: 'left-[calc(100%+20px)] sm:left-[calc(100%+24px)]'
   },
 ];
 
 const CategorySidebar: React.FC<CategorySidebarProps> = ({ selectedCategory, onSelectCategory }) => {
   return (
-    <div className="relative h-[500px] sm:h-[520px] md:h-[550px] hidden lg:block">
-      {categoryItemsData.map(({ name, count, IconComponent, itemPositionSpecific, iconContainerSize, iconSizeClasses, initialIconScale, textOffset }) => {
+    <div className="relative h-[350px] sm:h-[380px] md:h-[420px] hidden lg:block">
+      {categoryItemsData.map(({ name, count, IconComponent, itemPositionSpecific, iconContainerSize, iconSizeClasses, textOffset }) => {
         const isSelected = selectedCategory === name;
         return (
           <div
@@ -65,12 +62,12 @@ const CategorySidebar: React.FC<CategorySidebarProps> = ({ selectedCategory, onS
             )}
             <div className={`relative ${iconContainerSize} 
                              transition-all duration-[700ms] ease-out
-                             ${isSelected ? (name === 'Land' ? initialIconScale : 'scale-[1.35]') : initialIconScale}
+                             ${isSelected ? 'scale-[1.35]' : 'scale-100'} 
                            `}>
               <div
                 className={`absolute inset-[-6px] sm:inset-[-8px] rounded-full bg-white shadow-md -z-20 
-                            transition-all duration-200 ease-in-out
-                            ${isSelected ? 'opacity-60 scale-95' : 'opacity-100 scale-100 group-hover:ring-2 group-hover:ring-wonderla-btn-yellow/50'}`}
+                            transition-opacity duration-200 ease-in-out
+                            ${isSelected ? 'opacity-0' : 'opacity-100 group-hover:ring-2 group-hover:ring-wonderla-btn-yellow/50'}`}
               ></div>
               <IconComponent className={`${iconSizeClasses} text-wonderla-icon-blue overflow-visible`} />
             </div>

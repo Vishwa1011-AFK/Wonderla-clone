@@ -5,7 +5,7 @@ import Link from 'next/link';
 
 interface RideCardProps {
   id: number;
-  category: string;
+  category: string; 
   title: string;
   location: string;
   description: string;
@@ -18,52 +18,55 @@ const RideCard: React.FC<RideCardProps> = ({
   description,
   mediaUrl,
 }) => {
-  const gradientStyle = {
-    background: 'linear-gradient(180deg, rgba(34,48,74,0) 20%, #22304A 80%)', // Adjusted for better visibility
-  };
+
+  const slideWrapperClasses = `
+    rounded-4xl max-w-250 flex-none relative overflow-hidden 
+  `;
+
 
   return (
-    <div className="relative h-[360px] w-[260px] overflow-hidden rounded-3xl shadow-xl group flex-none">
+   <div className={slideWrapperClasses}>
       <video
         autoPlay
         loop
         muted
         playsInline
         preload="metadata"
-        className="absolute inset-0 w-full h-full object-cover rounded-3xl transition-transform duration-300 group-hover:scale-105"
+        className="aspect-[229/394] lg:aspect-[246/346] rounded-3xl w-full object-cover"
         key={mediaUrl}
       >
         <source src={mediaUrl} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
-      <div
-        className="absolute inset-0 flex flex-col justify-end"
-        style={gradientStyle}
-      >
-        <div className="p-4 lg:p-5 text-white">
-          <h3 className="text-xl font-sans capitalize !leading-custom-1.255 font-bold">
-            {title}
-          </h3>
-          <p className="text-sm font-sans !leading-custom-1.255 mt-1 opacity-80">
-            {location}
-          </p>
-          <p className="mt-2 line-clamp-2 text-sm !leading-custom h-[36px] overflow-hidden">
-            {description}
-          </p>
+      <div className="absolute inset-0 z-10 bg-ride-card-live-gradient rounded-2xl"></div> 
 
-          <div className="mt-3 transition-transform duration-200 ease-in-out group-hover:scale-105">
+      <div className="absolute inset-0 z-10 p-3 h-105p flex flex-col justify-end text-white"> 
+        <div className="font-mulish"> 
+          <div className="font-bold text-lg !leading-custom">{title}</div>
+          <div className="text-xs text-gray-300 !leading-custom">{location}</div>
+       <div className="text-xs !leading-custom line-clamp-3 mt-1"> 
+            {description}
+          </div>
+          <div className="hover:scale-105 transition-all duration-200">
             <Link href={`/rides/${location.toLowerCase()}/${title.toLowerCase().replace(/\s+/g, '-')}`} passHref legacyBehavior>
-              <a
+              <a> 
+                <button
                 className="
-                  inline-flex items-center justify-center 
                   h-10 w-full max-w-[150px] rounded-lg 
-                  text-xs font-black uppercase !leading-tight 
-                  text-wonderla-icon-blue bg-wonderla-btn-yellow
-                  transition-opacity duration-150 hover:opacity-90
+                  text-xs font-black uppercase leading-tight 
+                  flex items-center justify-center 
+                  text-wonderla-icon-blue bg-wonderla-btn-yellow 
+                  mt-2 hover:scale-105 transition-transform duration-200
                 "
+                style={{
+                  backgroundColor: '#FAD600',
+                  color: '#334DCF'
+                }}
+
               >
                 Ride Details
+              </button>
               </a>
             </Link>
           </div>

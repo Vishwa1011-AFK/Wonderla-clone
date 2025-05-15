@@ -1,4 +1,3 @@
-/* wonderla-clone/src/app/globals.css */
 @import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
 
@@ -37,7 +36,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #22304A; /* Or your project's dark mode base */
+    --background: #22304A; 
     --foreground: #ededed;
   }
 }
@@ -47,11 +46,14 @@ body {
   color: var(--foreground);
 }
 
-/* Optional: More robust scrollbar hiding if inline style isn't enough */
 .hide-scrollbar::-webkit-scrollbar {
   display: none;
 }
 .hide-scrollbar {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
 }
+.embla__slide {
+  position: relative;
+}
+

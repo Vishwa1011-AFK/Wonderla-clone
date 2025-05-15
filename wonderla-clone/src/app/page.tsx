@@ -1,9 +1,7 @@
-import RidesSection from '@/components/RidesSection'; 
+import RidesSection from '@/components/RidesSection';
 
 export default function Home() {
   return (
-    <main>
-      <RidesSection />
-    </main>
+   <RidesSection />
   );
 }

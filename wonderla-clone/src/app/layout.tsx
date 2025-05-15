@@ -1,12 +1,10 @@
 import "./globals.css";
 import { mulish } from '../lib/fonts';
-import { Inter } from 'next/font/google';
-
-const inter = Inter({ subsets: ["latin"] });
+import Header from "@/components/Header"; 
 
 export const metadata = {
-  title: "Wonderla Clone",
-  description: "A clone of Wonderla Parks & Resort website",
+  title: "Wonderla Clone - Single Page",
+  description: "A single-page clone of Wonderla Parks & Resort website section",
 };
 
 export default function RootLayout({
@@ -15,9 +13,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body className={`${mulish.className} bg-wonderla-bg text-white`}>
-        {children}
+    <html lang="en" className="h-full overflow-hidden"> 
+      <body className={`${mulish.className} bg-wonderla-bg text-white h-full flex flex-col overflow-hidden`}>
+        <Header />
+        <main className="flex-grow overflow-hidden"> 
+          {children}
+        </main>
       </body>
     </html>
   );
