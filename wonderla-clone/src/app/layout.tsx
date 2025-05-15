@@ -1,27 +1,21 @@
-import type { Metadata } from "next";
-import { Mulish } from "next/font/google"; 
+import { Inter } from "next/font/google";
 import "./globals.css";
 
-const mulish = Mulish({
-  subsets: ["latin"],
-  display: 'swap',
-  variable: '--font-mulish',
-  weight: ['400', '700', '800', '900'] 
-});
+const inter = Inter({ subsets: ["latin"] });
 
-export const metadata: Metadata = {
-  title: "Wonderla Rides Clone",
-  description: "Frontend assignment",
+export const metadata = {
+  title: "Wonderla Clone",
+  description: "A clone of Wonderla Parks & Resort website",
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={`${mulish.variable} font-sans antialiased bg-wonderla-bg`}>
+      <body className={`${inter.className} bg-wonderla-bg text-white`}>
         {children}
       </body>
     </html>
