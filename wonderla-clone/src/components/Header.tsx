@@ -19,8 +19,8 @@ const locationsData: LocationItem[] = [
     image: 'https://d22pimhl2qmbj7.cloudfront.net/public/Bangalore_a29cdf2e2c_dd51c380ad.webp?w=96&q=75',
     alt: 'Bengaluru image',
     subLocations: [
-      { name: 'Park', image: '/images/bangalore-park.png', alt: 'Park image', link: '/bengaluru' }, // Assuming local image path for these
-      { name: 'Resort', image: '/images/bangalore-resort.png', alt: 'Resort image', link: '/bengaluru-resort' },
+      { name: 'Park', image: '/bangalore-park.webp', alt: 'Park image', link: '/bengaluru' }, // Assuming local image path for these
+      { name: 'Resort', image: '/bangalore-resort.webp', alt: 'Resort image', link: '/bengaluru-resort' },
     ],
   },
   { name: 'Hyderabad', image: 'https://d22pimhl2qmbj7.cloudfront.net/public/Hyderabad_44ee040feb_30635eba9c.webp?w=96&q=75', alt: 'Hyderabad image', link: '/hyderabad' },
