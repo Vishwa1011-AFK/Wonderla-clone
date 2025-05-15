@@ -1,5 +1,6 @@
-import { Inter } from "next/font/google";
 import "./globals.css";
+import { mulish } from '../lib/fonts';
+import { Inter } from 'next/font/google';
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -15,7 +16,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} bg-wonderla-bg text-white`}>
+      <body className={`${mulish.className} bg-wonderla-bg text-white`}>
         {children}
       </body>
     </html>

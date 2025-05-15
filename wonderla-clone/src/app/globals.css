@@ -1,9 +1,33 @@
 /* wonderla-clone/src/app/globals.css */
 @import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap');
 
 :root {
   --background: #ffffff;
   --foreground: #171717;
+}
+
+@layer base {
+  .font-mulish {
+    font-family: 'Mulish', sans-serif;
+  }
+}
+
+@layer utilities {
+  .animate-slow-rotate {
+    animation: slow-rotate 20s linear infinite;
+  }
+  @keyframes slow-rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  .leading-custom {
+    line-height: 1.2;
+  }
 }
 
 @theme {
